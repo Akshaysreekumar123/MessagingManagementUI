@@ -57,7 +57,7 @@ export default function SimpleTable() {
   let isLoading = true;
 
   async function sampleFunc() {
-    let response = await fetch("/message/"+query.get("id"));
+    let response = await fetch("https://akshay-message-app.herokuapp.com/message/"+query.get("id"));
     let body = await response.json();
     setMessage(body.messageValue ? body.messageValue : "Message Expired");
     isLoading = false;
