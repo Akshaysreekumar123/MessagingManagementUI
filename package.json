@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "proxy": "http://localhost:7000",
+  "proxy": "https://akshay-message-app.herokuapp.com",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.0",
