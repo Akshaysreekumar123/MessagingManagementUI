@@ -50,7 +50,7 @@ export default function SimpleTable() {
   let isLoading = true;
 
   async function sampleFunc() {
-    let response = await fetch("/message");
+    let response = await fetch("https://akshay-message-app.herokuapp.com/message");
     let body = await response.json();
     upDateData(body);
   }
