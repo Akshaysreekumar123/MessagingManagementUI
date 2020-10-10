@@ -61,7 +61,7 @@ export default function AddEmployee() {
   const [message, setMessage] = React.useState("Nothing saved in the session");
 
   async function sampleFunc(toInput) {
-    const response = await fetch("/message", {
+    const response = await fetch("https://akshay-message-app.herokuapp.com/message", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
