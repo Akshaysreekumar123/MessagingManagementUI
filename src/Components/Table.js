@@ -92,7 +92,7 @@ export default function SimpleTable() {
 				           :     ((row.messageType === 1)?
 				                  <TableCell align="center"><a target="_blank" href={'/viewMsg?id=' + row.messageId} rel="noopener noreferrer">{row.displayName}</a></TableCell>
 				:
-					                  <TableCell align="center"><Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" /><a target="_blank" href={row.messageValue} rel="noopener noreferrer">{row.displayName}</a></TableCell>
+					                  <TableCell align="center"><a target="_blank" href={"//"+row.messageValue} rel="noopener noreferrer">{row.displayName}</a></TableCell>
 				))
 }
                 </TableRow>
